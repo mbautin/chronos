@@ -4,8 +4,15 @@
 
     <groupId>com.airbnb</groupId>
     <artifactId>chronos</artifactId>
-    <version>2.1.0_mesos-0.14.0-rc4</version>
+    <version>2.1.0_mesos-0.14.0-rc4-csd-1-SNAPSHOT</version>
     <inceptionYear>2012</inceptionYear>
+
+    <scm>
+      <connection>scm:git:git://github.com/clearstorydata/chronos.git</connection>
+      <developerConnection>scm:git:git@github.com:clearstorydata/chronos.git</developerConnection>
+      <url>http://github.com/clearstorydata/chronos/tree/v2.1.0-csd</url>
+      <tag>v2.1.0-csd</tag>
+    </scm>
 
     <prerequisites>
         <maven>3.0</maven>
