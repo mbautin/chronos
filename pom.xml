@@ -14,7 +14,7 @@
     <scm>
         <connection>scm:git:git://github.com/clearstorydata/chronos.git</connection>
         <developerConnection>scm:git:git@github.com:clearstorydata/chronos.git</developerConnection>
-        <url>http://github.com/clearstorydata/chornos/tree/master</url>
+        <url>http://github.com/clearstorydata/chronos/tree/master</url>
         <tag>HEAD</tag>
     </scm>
 
