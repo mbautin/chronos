@@ -20,3 +20,10 @@
 
 # Use $OPTS to add other settings not handled by init script
 #OPTS="--log_config /etc/chronos/logging.properties"
+
+# Allow overriding these settings without creating a file that is already
+# contained in the Debian package, because this will require manual input when
+# reinstalling the package.
+if [ -f "/etc/default/chronos-overrides" ]; then
+  . "/etc/default/chronos-overrides"
+fi
