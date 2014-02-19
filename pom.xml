@@ -452,11 +452,6 @@
                                     <type>file</type>
                                 </data>
                                 <data>
-                                    <src>${project.basedir}/src/deb/etc/default</src>
-                                    <type>file</type>
-                                    <dst>/etc/default/${project.artifactId}</dst>
-                                </data>
-                                <data>
                                     <src>${project.basedir}/src/main/resources/logging.properties</src>
                                     <type>file</type>
                                     <dst>/etc/${project.artifactId}/logging.properties</dst>
@@ -483,15 +478,6 @@
                                   <symlink>true</symlink>
                                   <linkTarget>${deb.lib.directory}/bin/${project.artifactId}</linkTarget>
                                   <linkName>/usr/bin/${project.artifactId}</linkName>
-                                </data>
-                                <data>
-                                    <src>${project.basedir}/bin/chronos.debian.init</src>
-                                    <type>file</type>
-                                    <dst>/etc/init.d/${project.artifactId}</dst>
-                                    <mapper>
-                                        <type>perm</type>
-                                        <filemode>755</filemode>
-                                    </mapper>
                                 </data>
                                 <data>
                                     <type>template</type>
