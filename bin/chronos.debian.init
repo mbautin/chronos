@@ -58,7 +58,7 @@ set_environment() {
 case "$1" in
   start)
     set_environment
-    log_daemon_msg "Starting periodic command scheduler" "cron"
+    log_daemon_msg "Starting periodic command scheduler" "${NAME}"
 
     # best way to daemonize, imho
     start-stop-daemon --start --quiet --background \
