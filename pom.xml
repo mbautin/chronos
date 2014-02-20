@@ -478,8 +478,6 @@
                                     <paths>
                                         <path>/etc/${project.artifactId}</path>
                                         <path>${deb.lib.directory}</path>
-                                        <path>/var/log/${project.artifactId}</path>
-                                        <path>/var/run/${project.artifactId}</path>
                                     </paths>
                                 </data>
                             </dataSet>
