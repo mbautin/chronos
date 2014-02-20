@@ -452,11 +452,6 @@
                                     <type>file</type>
                                 </data>
                                 <data>
-                                    <src>${project.basedir}/src/main/resources/logging.properties</src>
-                                    <type>file</type>
-                                    <dst>/etc/${project.artifactId}/logging.properties</dst>
-                                </data>
-                                <data>
                                     <src>${project.build.directory}/dependency</src>
                                     <type>directory</type>
                                     <mapper>
