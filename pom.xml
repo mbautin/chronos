@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.airbnb</groupId>
     <artifactId>chronos</artifactId>
-    <version>2.1.0-csd-4-SNAPSHOT</version>
+    <version>2.1.0-csd-4</version>
     <inceptionYear>2012</inceptionYear>
 
     <prerequisites>
@@ -393,13 +392,13 @@
                         </goals>
                         <configuration>
                             <target>
-                                <property name="compile_classpath" refid="maven.compile.classpath"/>
-                                <property name="configFile" value="${assets.dir}/app.build.js"/>
-                                <property name="optimizerFile" value="${assets.dir}/r.js"/>
-                                <property name="sourceDir" value="${assets.dir}"/>
-                                <property name="failOnError" value="true"/>
+                                <property name="compile_classpath" refid="maven.compile.classpath" />
+                                <property name="configFile" value="${assets.dir}/app.build.js" />
+                                <property name="optimizerFile" value="${assets.dir}/r.js" />
+                                <property name="sourceDir" value="${assets.dir}" />
+                                <property name="failOnError" value="true" />
                                 <ant antfile="${basedir}/build.xml">
-                                    <target name="generateAssets"/>
+                                    <target name="generateAssets" />
                                 </ant>
                             </target>
                         </configuration>
